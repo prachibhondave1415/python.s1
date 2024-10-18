@@ -1,3 +1,5 @@
+
+
 students = {
   "Prachi" : {
     "age" : 20,
@@ -15,7 +17,7 @@ students = {
 def grades(marks):
     if marks>=90:
         return "A"  
-    elif marks>=800:
+    elif marks>=80:
         return "B"  
     elif marks>=70:
         return "C"  
@@ -27,6 +29,7 @@ def grades(marks):
 while True:
 
     i=int(input("Enter : 1.Add new students\n\t2.Update details of existing students \n\t3.Display all student details\n\t4.Exit"))
+
     if i==3:
         if students:
             for x,y in students.items():
@@ -35,6 +38,7 @@ while True:
                 print(f"Marks:{y['marks']}")
                 grade=grades(y['marks'])
                 print(f"Grade:{grade}")
+
     elif i==1:
         name=input("Enter name of student: ")
         age=int(input("Enter age of student: "))
